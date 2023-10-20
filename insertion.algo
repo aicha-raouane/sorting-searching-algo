@@ -1,0 +1,15 @@
+ALGORITHM algorithm_insertion
+VAR
+// varibles type
+    i,j,n: INTEGER
+BEGIN
+// algorithm_insertion's body
+    n:= tab.lenght;
+    FOR i FROM 0 TO n-1 STEP 1  DO
+        FOR j FROM 0 TO n-i-1 STEP 1  DO
+        IF (tab[i]>tab[i+1]) THEN
+            swap(tab[i],tab[i+1])
+        END_IF
+        END_FOR
+    END_FOR
+END
